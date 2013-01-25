@@ -62,11 +62,15 @@
         }).appendTo(mobileNav);
 
         portfolioItems.each(function() {
-         var el = $(this);
+         var
+            el      =   $(this),
+            link    =   el.find('a');
+
          $("<option />", {
-             "value"    : el.attr("href"),
+             "value"    : link.attr("href"),
              "text"     : el.text()
          }).appendTo(mobileNav);
+
         });
 
         if ( body.hasClass('index') ) {
