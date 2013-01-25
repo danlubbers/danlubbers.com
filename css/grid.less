@@ -1,0 +1,81 @@
+// Based on smart-grid.css 3.1.0 | BSD License | http://dryan.com/css-smart-grid
+
+@containerMaxWidth:     1200px; // set this to the maximum width you want .container to have
+@gutter:				percentage((@containerMaxWidth/48)/(@containerMaxWidth - (@containerMaxWidth/48))); // 20px at 960px wide container, accounting for a 1/2 gutter width padding on the left and right of the container
+@onecol:                percentage((@containerMaxWidth/16)/(@containerMaxWidth - (@containerMaxWidth/48))); // 60px at 960px wide container
+
+// General clearfix helper function
+.clearfix() {
+    zoom: 1;
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+.margin(@offset, @prop) when (@offset = 0) and (@prop = 'first') { margin-left: 0; }
+.margin(@offset, @prop) when (@offset = 0) and (isnumber(@prop)) { margin: 0 0 0 @gutter; }
+.margin(@offset, @prop) when (@offset > 0) and (@prop = 'first') { margin-left: (@onecol * @offset) + (@gutter * @offset); }
+.margin(@offset, @prop) when (@offset > 0) and (isnumber(@prop)) { margin-left: (@onecol * @offset) + (@gutter * (@offset + 1)); }
+
+
+.offset(@offset, @prop) when (@prop = 'first') {}
+
+.offset(@offset, @prop) when (@offset = 0) and (isnumber(@prop)) {
+	&:first-child {
+		margin-left: 0;
+	}
+}
+
+.offset(@offset, @prop) when (@offset > 0) and (isnumber(@prop)) {
+	&:first-child {
+		margin-left: (@onecol * @offset) + (@gutter * @offset);
+	}
+}
+
+.split(@selector, @offset, @prop) when ((~`"@{selector}".split(',').slice(1, 2).length`) = 0) {
+	(~`"@{selector}".split(',').slice(0, 1)`) {
+		.offset(@offset, @prop);
+	}
+}
+
+.split(@selector, @offset, @prop) when ((~`"@{selector}".split(',').slice(1, 2).length`) > 0) and ((~`"@{selector}".split(',').slice(2, 3).length`) = 0){
+	(~`"@{selector}".split(',').slice(0, 1)`), (~`"@{selector}".split(',').slice(1, 2)`) {
+		.offset(@offset, @prop);
+	}
+}
+
+.split(@selector, @offset, @prop) when ((~`"@{selector}".split(',').slice(2, 3).length`) > 0) {
+	(~`"@{selector}".split(',').slice(0, 1)`), (~`"@{selector}".split(',').slice(1, 2)`), (~`"@{selector}".split(',').slice(2, 3)`) {
+		.offset(@offset, @prop);
+	}
+}
+
+.columns(@selector, @count:1, @offset:0, @prop:0) when (@count = 'container') {
+	@{selector} {
+		max-width: (@containerMaxWidth - 20px);
+		padding: 0 @gutter/2;
+		margin: 0 auto;
+		.clearfix();
+	}
+}
+
+.columns(@selector, @count:1, @offset:0, @prop:0) when (@count = 'row') {
+	@{selector} {
+		width: 100%;
+		.clearfix();
+	}
+}
+
+.columns(@selector, @count:1, @offset:0, @prop:0)  when (isnumber(@count)) {
+	@{selector} {
+		float: left;
+		width: (@onecol * @count) + (@gutter * (@count - 1));	
+		.margin(@offset, @prop);	    
+	}
+	.split(@selector, @offset, @prop);
+}

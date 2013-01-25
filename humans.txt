@@ -1,0 +1,15 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+	Dan Lubbers -- Owner -- @danlubbers
+	Jeffrey Louden -- Developer -- @jeffreylouden
+
+# THANKS
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    jQuery, Modernizr
+    jekyll, GitHub pages

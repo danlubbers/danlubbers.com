@@ -1,0 +1,5 @@
+<ul id="sub-nav">
+  {% for post in site.posts %}
+    {% if post.url %}<li><a href="{{ site.static_url }}{{ post.url | slugify }}" title="{{ post.title | capitalize }}" {% if post.url == page.url %}class="active"{% endif %}>{{ post.title | capitalize }}</a></li>{% endif %}
+  {% endfor %}
+</ul>

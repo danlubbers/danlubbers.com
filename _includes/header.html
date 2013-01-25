@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7 oldie"> <![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8 oldie"> <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9 oldie"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Dan Lubbers Photography</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link rel="shortcut icon" href="http://www.danlubbers.com/favicon.ico" />
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+        <script type="text/javascript" src="//use.typekit.net/pdx2lja.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+        
+        <link rel="stylesheet" href="css/main.css">
+
+    </head>
+    <body class="{{ page.url | slugify | replace: '/','' | replace: '.html','' }}">
+        <section id="main" role="main">
+            <header>
+                <h1><a href="/" title="danlubbers.com"><img src="img/logo.png" alt="Dan Lubbers Photography" /></a></h1>
+                <nav>
+                    <ul>
+                        <li>Portfolio
+                            {% include nav.html %}
+                        </li>
+                        <li><a href="http://www.danlubbers.blogspot.com/" title="">Blog</a></li>
+                        <li><a href="#about" title="About Dan Lubbers" id="about-link">Bio</a></li>
+                        <li><a href="#contact" title="Connect with Dan Lubbers" id="contact-link">Connect</a></li>
+                        <li><div class="fb-like" data-href="https://www.facebook.com/danlubbersphotographs" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-ref="main-nav"></div></li>
+                    </ul>
+                </nav>
+            </header>
+            <div id="content">
