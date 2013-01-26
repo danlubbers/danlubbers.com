@@ -8,7 +8,7 @@ layout: default
 <img src="http://content.danlubbers.com/img/portraits/danlubbers-portraits-portfolio-4.jpg" data-title="Cassius" data-subtitle="A boxer" />
 <img src="http://content.danlubbers.com/img/portraits/danlubbers-portraits-portfolio-5.jpg" data-title="Daniel Woods" data-subtitle="Pro-climbing athlete" />
 <img src="http://content.danlubbers.com/img/portraits/danlubbers-portraits-portfolio-6.jpg" data-title="Ashley Holt" data-subtitle="Sugar Monster Sweets" />
-<img src="http://content.danlubbers.com/img/portraits/danlubbers-portraits-portfolio-7.jpg" data-title="Damian Gerlach against a brick wall while drinking an IPA" data-subtitle="Author" />
+<img src="http://content.danlubbers.com/img/portraits/danlubbers-portraits-portfolio-7.jpg" data-title="Damian Gerlach" data-subtitle="Author" />
 <img src="http://content.danlubbers.com/img/portraits/danlubbers-portraits-portfolio-8.jpg" data-title="Jaime Corum with her horse" data-subtitle="Master Painter" />
 <img src="http://content.danlubbers.com/img/portraits/danlubbers-portraits-portfolio-9.jpg" data-title="Justin Vining" data-subtitle="Painter" />
 <img src="http://content.danlubbers.com/img/portraits/danlubbers-portraits-portfolio-10.jpg" data-title="Sarah Ventura with an Assault Rifle" data-subtitle="" />
