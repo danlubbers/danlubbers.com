@@ -1443,7 +1443,7 @@ footer p {
     right: 0;
     z-index: 0;
     background: rgba(0, 0, 0, 0.95);
-    padding: 20px;
+    padding: 30px 20px 20px;
     opacity: 0;
     overflow: hidden;
     -webkit-transition: all 350ms ease-in-out;
@@ -1532,7 +1532,7 @@ footer p {
     margin-top: 10px;
   }
   #about ul {
-    width: 49.9%;
+    width: 33.33333333%;
     float: left;
     display: block;
   }
