@@ -1337,6 +1337,9 @@ footer p {
   nav select {
     display: none;
   }
+  .touch #content figure #info {
+    opacity: 1;
+  }
   #content figure {
     position: relative;
     overflow: hidden;
