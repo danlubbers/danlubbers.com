@@ -34,7 +34,15 @@
         currentSlide,
         currentIndex,
 
+        windowHeight        =   $(win).height(),
+
+        header              =   $('header'),
+        headerHeight        =   header.outerHeight(),
+        footer              =   $('footer'),
+        footerHeight        =   footer.outerHeight(),
         content             =   $('#content'),
+        contentImages       =   content.find('img'),
+        contentHeight       =   windowHeight - (footerHeight + headerHeight),
         info                =   $('#info'),
         infoContainer       =   info.find('span'),
         figure              =   content.find('figure'),
@@ -52,6 +60,22 @@
         setTimeout(function() {
             cycle();
         }, 3000);
+    }
+
+    function detectContentSize( winHeight ) {
+        contentHeight   =   winHeight - (footerHeight + headerHeight + 40);
+
+        contentImages.each(function() {
+            var t  =   $(this);
+
+            t.css({
+                'max-height' : contentHeight + 'px'
+            });
+        });
+
+        content.css({
+            'height' : contentHeight + 'px'
+        });
     }
 
     function setup() {
@@ -81,6 +105,8 @@
             images.eq(0).addClass(CURRENT);
             switchTitle(images.eq(0));
         }
+
+        detectContentSize(windowHeight);
     }
 
     function switchTitle( image ) {
@@ -195,5 +221,10 @@
     });
 
     setup();
+
+    $(win).resize(function(){
+        windowHeight = $(this).outerHeight();
+        detectContentSize(windowHeight);
+    });
 
 })(jQuery, window, document);
