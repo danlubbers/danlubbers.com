@@ -1299,6 +1299,7 @@ footer p {
     color: #d03231;
   }
   nav ul li:first-child {
+    z-index: 200;
     margin-left: 0;
   }
   nav ul li:last-child {
