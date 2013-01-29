@@ -21,6 +21,7 @@
         mobileNav           =   nav.find('select'),
         portfolio           =   nav.find('#sub-nav'),
         portfolioItems      =   portfolio.find('li'),
+        portfolioMenuItem   =   $('#portfolio-menu'),
         about               =   $('#about'),
         aboutLink           =   $('#about-link'),
         contact             =   $('#contact'),
@@ -182,6 +183,11 @@
         contactLink.removeClass(ACTIVE);
         about.addClass(SHOW);
         contact.removeClass(SHOW);
+    });
+
+    portfolioMenuItem.on('click', function(e) {
+        e.preventDefault();
+        $(this).closest('li').toogleClass('show');
     });
 
     contactLink.on('click', function(e) {

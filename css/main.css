@@ -1331,7 +1331,8 @@ footer p {
   nav ul li > ul li a {
     display: block;
   }
-  nav ul li:hover > ul {
+  nav ul li:hover > ul,
+  nav ul li.show > ul {
     opacity: 1;
     max-height: 16em;
   }
