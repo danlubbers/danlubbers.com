@@ -37,10 +37,10 @@
         windowHeight        =   $(win).height(),
 
         header              =   $('header'),
-        headerHeight        =   header.outerHeight(),
         footer              =   $('footer'),
-        footerHeight        =   footer.outerHeight(),
         content             =   $('#content'),
+        footerHeight        =   footer.outerHeight(),
+        headerHeight        =   header.outerHeight(),
         contentImages       =   content.find('img'),
         contentHeight       =   windowHeight - (footerHeight + headerHeight),
         info                =   $('#info'),
