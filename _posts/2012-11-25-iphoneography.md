@@ -4,7 +4,7 @@ layout: default
 
 <img src="http://content.danlubbers.com/img/iphoneography/danlubbers-iphoneography-portfolio-1.jpg" data-title="The sun shines through the fog on a highway." data-subtitle="" />
 <img src="http://content.danlubbers.com/img/iphoneography/danlubbers-iphoneography-portfolio-2.jpg" data-title="Hawaiian Hibiscus (Hibiscus brackenridgei) is the state flower of Hawaii." data-subtitle="" />
-<img src="http://content.danlubbers.com/img/iphoneography/danlubbers-iphoneography-portfolio-3.jpg" data-title="A farm is rural Kentucky grows tobacco." data-subtitle="" />
+<img src="http://content.danlubbers.com/img/iphoneography/danlubbers-iphoneography-portfolio-3.jpg" data-title="A farm in rural Kentucky grows tobacco." data-subtitle="" />
 <img src="http://content.danlubbers.com/img/iphoneography/danlubbers-iphoneography-portfolio-4.jpg" data-title="Akaka waterfall" data-subtitle="Akaka State Falls Park, HI" />
 <img src="http://content.danlubbers.com/img/iphoneography/danlubbers-iphoneography-portfolio-5.jpg" data-title="A lightning storms rolls through Louisville, KY." data-subtitle="" />
 <img src="http://content.danlubbers.com/img/iphoneography/danlubbers-iphoneography-portfolio-6.jpg" data-title="A silhouetted girl stands on a pier watching the sun set." data-subtitle="Ohio River, Westport, KY" />
