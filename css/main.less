@@ -283,7 +283,6 @@ footer {
                     margin-right: 0;
                 }
                 > ul {
-                    opacity: 0;
                     max-height: 0;
                     position: absolute;
                     top: 100%;
@@ -294,12 +293,9 @@ footer {
                     padding: 10px;
                     overflow: hidden;
 
-                    -webkit-transition: opacity 250ms ease-in-out,
-                                        max-height 250ms ease-in-out;
-                    -moz-transition: opacity 250ms ease-in-out,
-                                        max-height 250ms ease-in-out;
-                    transition: opacity 250ms ease-in-out,
-                                        max-height 250ms ease-in-out;
+                    -webkit-transition: max-height 250ms ease-in-out;
+                    -moz-transition: max-height 250ms ease-in-out;
+                    transition: max-height 250ms ease-in-out;
 
                     li {
                         display: block;
@@ -315,7 +311,6 @@ footer {
                 }
                 &:hover {
                     > ul {
-                        opacity: 1;    
                         max-height: 16em;                    
                     }
                 }
