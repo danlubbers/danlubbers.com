@@ -1306,6 +1306,7 @@ footer p {
     margin-right: 0;
   }
   nav ul li > ul {
+    opacity: 0;
     max-height: 0;
     position: absolute;
     top: 100%;
@@ -1315,9 +1316,9 @@ footer p {
     text-align: left;
     padding: 10px;
     overflow: hidden;
-    -webkit-transition: max-height 250ms ease-in-out;
-    -moz-transition: max-height 250ms ease-in-out;
-    transition: max-height 250ms ease-in-out;
+    -webkit-transition: opacity 250ms ease-in-out, max-height 250ms ease-in-out;
+    -moz-transition: opacity 250ms ease-in-out, max-height 250ms ease-in-out;
+    transition: opacity 250ms ease-in-out, max-height 250ms ease-in-out;
   }
   nav ul li > ul li {
     display: block;
@@ -1331,6 +1332,7 @@ footer p {
     display: block;
   }
   nav ul li:hover > ul {
+    opacity: 1;
     max-height: 16em;
   }
   nav select {
