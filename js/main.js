@@ -36,6 +36,7 @@
         currentIndex,
 
         windowHeight        =   $(win).height(),
+        windowWidth         =   $(win).innerWidth(),
 
         header              =   $('header'),
         footer              =   $('footer'),
@@ -63,20 +64,22 @@
         }, 3000);
     }
 
-    function detectContentSize( winHeight ) {
-        contentHeight   =   winHeight - (footerHeight + headerHeight + 40);
+    function detectContentSize( winHeight, winWidth ) {
+        if ( winWidth > 500 ) {
+            contentHeight   =   winHeight - (footerHeight + headerHeight + 40);
 
-        contentImages.each(function() {
-            var t  =   $(this);
+            contentImages.each(function() {
+                var t  =   $(this);
 
-            t.css({
-                'max-height' : contentHeight + 'px'
+                t.css({
+                    'max-height' : contentHeight + 'px'
+                });
             });
-        });
 
-        content.css({
-            'height' : contentHeight + 'px'
-        });
+            content.css({
+                'height' : contentHeight + 'px'
+            });
+        }
     }
 
     function setup() {
@@ -229,8 +232,10 @@
     setup();
 
     $(win).resize(function(){
-        windowHeight = $(this).outerHeight();
-        detectContentSize(windowHeight);
+        var w = $(this);
+        windowWidth  = w.innerWidth();
+        windowHeight = w.outerHeight();
+        detectContentSize(windowHeight, windowWidth);
     });
 
 })(jQuery, window, document);
