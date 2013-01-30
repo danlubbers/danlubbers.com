@@ -39,12 +39,12 @@
         windowWidth         =   $(win).innerWidth(),
 
         header              =   $('header'),
+        headerHeight,
         footer              =   $('footer'),
+        footerHeight,
         content             =   $('#content'),
-        footerHeight        =   footer.outerHeight(),
-        headerHeight        =   header.outerHeight(),
         contentImages       =   content.find('img'),
-        contentHeight       =   windowHeight - (footerHeight + headerHeight),
+        contentHeight,
         info                =   $('#info'),
         infoContainer       =   info.find('span'),
         figure              =   content.find('figure'),
@@ -65,7 +65,12 @@
     }
 
     function detectContentSize( winHeight, winWidth ) {
-        if ( winWidth > 500 ) {
+        
+
+        if ( winWidth >= 500 ) {
+
+            headerHeight    =   header.outerHeight();
+            footerHeight    =   footer.outerHeight();
             contentHeight   =   winHeight - (footerHeight + headerHeight + 40);
 
             contentImages.each(function() {
@@ -78,6 +83,18 @@
 
             content.css({
                 'height' : contentHeight + 'px'
+            });
+        } else {
+            contentImages.each(function() {
+                var t  =   $(this);
+
+                t.css({
+                    'max-height' : '100%'
+                });
+            });
+
+            content.css({
+                'height' :  'auto'
             });
         }
     }
@@ -110,7 +127,7 @@
             switchTitle(images.eq(0));
         }
 
-        detectContentSize(windowHeight);
+        detectContentSize(windowHeight, windowWidth);
     }
 
     function switchTitle( image ) {
