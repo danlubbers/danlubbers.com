@@ -69,8 +69,8 @@
 
         if ( winWidth >= 500 ) {
 
-            headerHeight    =   header.outerHeight();
-            footerHeight    =   footer.outerHeight();
+            headerHeight    =   (header.outerHeight() === 0) ? 59 : header.outerHeight();
+            footerHeight    =   (footer.outerHeight() === 0) ? 48 : footer.outerHeight();
             contentHeight   =   winHeight - (footerHeight + headerHeight + 40);
 
             contentImages.each(function() {
