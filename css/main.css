@@ -1271,7 +1271,6 @@ footer p {
   }
   header {
     position: relative;
-    min-height: 48px;
   }
   header img {
     margin: 0 auto;
