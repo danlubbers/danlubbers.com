@@ -1475,6 +1475,7 @@ footer p {
   }
   #about .aurora {
     display: block;
+    float: none;
     margin: 10px 0;
   }
   #about p {
