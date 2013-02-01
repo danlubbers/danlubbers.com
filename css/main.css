@@ -1450,7 +1450,7 @@ footer p {
     background: rgba(0, 0, 0, 0.95);
     padding: 30px 20px 20px;
     opacity: 0;
-    overflow: hidden;
+    overflow: auto;
     -webkit-transition: all 350ms ease-in-out;
     -moz-transition: all 350ms ease-in-out;
     transition: all 350ms ease-in-out;
