@@ -1113,6 +1113,9 @@ nav select {
   display: block;
   margin: 20px 0;
 }
+.touch #content figure img {
+  padding-top: 60px;
+}
 #content {
   position: relative;
   overflow: hidden;
