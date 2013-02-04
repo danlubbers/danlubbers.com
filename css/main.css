@@ -1130,6 +1130,7 @@ nav select {
 }
 #content #info {
   display: none;
+  min-height: 60px;
 }
 #about,
 #contact {
