@@ -1,5 +1,3 @@
-//@codekit-prepend "wufoo.js";
-
 (function( $, win, doc ) {
     "use strict";
 
