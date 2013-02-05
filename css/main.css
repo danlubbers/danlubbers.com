@@ -1066,7 +1066,9 @@ ul.icons li .icon-large:before {
     top: 0;
   }
 }
+.fb-like,
 .fb_edge_widget_with_comment {
+  min-width: 100px !important;
   width: 100px !important;
   overflow: hidden;
 }
