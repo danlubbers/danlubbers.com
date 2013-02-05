@@ -151,7 +151,6 @@
                     var
                         t   =   $(this),
                         i   =   t.index();
-                    console.log(t.index());
                     if ( (i > 0) && (i < (images.length - 1)) ) {
                         t.addClass(PAST);
                     }
@@ -185,11 +184,10 @@
 
     content.on('swipe', function(e) {
         e.preventDefault();
-        console.log(e.direction);
         if (e.direction === 'left') {
-            switchSlide(PREV);
-        } else {
             switchSlide(NEXT);
+        } else {
+            switchSlide(PREV);
         }
     });
 
