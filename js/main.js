@@ -63,7 +63,6 @@
     }
 
     function detectContentSize( winHeight, winWidth ) {
-        
 
         if ( winWidth >= 500 ) {
 
@@ -82,6 +81,9 @@
             content.css({
                 'height' : contentHeight + 'px'
             });
+
+            content.hammer();
+
         } else {
             contentImages.each(function() {
                 var t  =   $(this);
@@ -180,6 +182,16 @@
     // figure.on('mouseleave', function() {
     //     isPaused = false;
     // });
+
+    content.on('swipe', function(e) {
+        e.preventDefault();
+        console.log(e.direction);
+        if (e.direction === 'left') {
+            switchSlide(PREV);
+        } else {
+            switchSlide(NEXT);
+        }
+    });
 
     prevSlide.on('click', function(e) {
         e.preventDefault();
