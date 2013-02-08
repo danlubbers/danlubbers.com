@@ -248,23 +248,23 @@ footer {
             display: block;
             margin: 0 auto 20px;
         }
+        p {
+            margin-bottom: 20px;
+        }
+        a {
+            color: @link-hover;
+            text-decoration: none;
+            -webkit-transition: color ease 500ms;
+            -moz-transition: color ease 500ms;
+            transition: color ease 500ms;
+            &:hover {
+                color: @link-color;
+            }
+        }
     }
 }
 
-.blog {
-    p {
-        margin-bottom: 20px;
-    }
-    a {
-        color: @link-hover;
-        text-decoration: none;
-        -webkit-transition: color ease 500ms;
-        -moz-transition: color ease 500ms;
-        transition: color ease 500ms;
-        &:hover {
-            color: @link-color;
-        }
-    }
+.blog {    
     #about-copy {
         img {
             margin-bottom: 20px;
