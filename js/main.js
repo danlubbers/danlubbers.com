@@ -254,13 +254,21 @@
         }
     });
 
-    content.on('contextmenu', function(e) {
+    figure.on('contextmenu', function(e) {
         e.preventDefault();
         body.append('<div id="warning"><p>All images are copyrighted. Please contact me to obtain a copy</p></div>');
+
+        warning     =   $('#warning');
+
+        warning.on('click', function() {
+            $(this).remove();
+        });
+
     });
 
-    $('#warning').on('click', function() {
-        $(this).remove();
+    images.on('mousedown', function(e) {
+        e.preventDefault();
+        return false;
     });
 
     setup();
