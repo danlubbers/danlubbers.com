@@ -12,6 +12,7 @@
         noop                =   function() {},
         console             =   win.console || {"log": noop, "warn": noop, "error": noop},
 
+        html                =   $('html'),
         body                =   $('body'),
 
         nav                 =   $('nav'),
@@ -43,6 +44,7 @@
         content             =   $('#content'),
         contentImages       =   content.find('img'),
         contentHeight,
+        imageHeight,
         info                =   $('#info'),
         infoContainer       =   info.find('span'),
         figure              =   content.find('figure'),
@@ -69,13 +71,14 @@
 
             headerHeight    =   (header.outerHeight() === 0) ? 59 : header.outerHeight();
             footerHeight    =   (footer.outerHeight() === 0) ? 48 : footer.outerHeight();
-            contentHeight   =   winHeight - (footerHeight + headerHeight + 40);
-
+            contentHeight   =   (winHeight - (footerHeight + headerHeight + 40));
+            imageHeight     =   html.hasClass('touch') ? (winHeight - (footerHeight + headerHeight + 100)) : (winHeight - (footerHeight + headerHeight + 40));
+            
             contentImages.each(function() {
                 var t  =   $(this);
 
                 t.css({
-                    'max-height' : contentHeight + 'px'
+                    'max-height' : imageHeight + 'px'
                 });
             });
 
