@@ -580,6 +580,24 @@ footer {
     }
 }
 
+#warning {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+    background: rgba(0,0,0,0.9);
+    cursor: pointer;
+    p {
+        margin: 0 auto;
+        width: 50%;
+        display: block;
+        text-align: center;
+        padding: 200px 0 0;
+    }
+}
+
 @media (min-width: 768px) {
     .columns(~'h1', 5);
     .columns(~'nav',7);

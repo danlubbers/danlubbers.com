@@ -1,3 +1,2 @@
-auto: false
-server: false
+auto: true
 permalink: /:title.html

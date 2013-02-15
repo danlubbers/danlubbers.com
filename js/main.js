@@ -254,6 +254,15 @@
         }
     });
 
+    content.on('contextmenu', function(e) {
+        e.preventDefault();
+        body.append('<div id="warning"><p>All images are copyrighted. Please contact me to obtain a copy</p></div>');
+    });
+
+    $('#warning').on('click', function() {
+        $(this).remove();
+    });
+
     setup();
 
     $(win).resize(function(){
