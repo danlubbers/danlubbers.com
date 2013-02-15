@@ -50,6 +50,7 @@
 
         title,
         subtitle,
+        warning,
 
         minHeight           =   0;
 
