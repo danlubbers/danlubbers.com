@@ -261,7 +261,7 @@
 
     figure.on('contextmenu', function(e) {
         e.preventDefault();
-        body.append('<div id="warning"><p>All images are copyrighted. Please contact me to obtain a copy</p></div>');
+        body.append('<div id="warning"><p>All images are copyrighted. Please <a href="mailto:lubbers.dan@gmail.com" title="Contact me">contact me</a> to obtain a copy</p></div>');
 
         warning     =   $('#warning');
 
