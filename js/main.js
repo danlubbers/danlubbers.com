@@ -243,6 +243,7 @@
             contactLink.removeClass(ACTIVE);
             about.removeClass(SHOW);
             contact.removeClass(SHOW);
+            warning.remove();
         }
     });
 
@@ -263,6 +264,10 @@
         body.append('<div id="warning"><p>All images are copyrighted. Please contact me to obtain a copy</p></div>');
 
         warning     =   $('#warning');
+
+        warning.find('a').on('click', function(e) {
+            e.stopPropagation();
+        });
 
         warning.on('click', function() {
             $(this).remove();
