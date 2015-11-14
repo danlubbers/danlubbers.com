@@ -67,7 +67,7 @@
 
     function detectContentSize( winHeight, winWidth ) {
 
-        if ( winWidth >= 500 ) {
+        if ( winWidth >= 768 ) {
 
             headerHeight    =   (header.outerHeight() === 0) ? 59 : header.outerHeight();
             footerHeight    =   (footer.outerHeight() === 0) ? 48 : footer.outerHeight();
