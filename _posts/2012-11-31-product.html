@@ -1,0 +1,8 @@
+---
+layout: default
+nav_url: product.html
+---
+
+{% for image in site.data.product.images %}
+  <img src="{{image.url}}" data-title="{{image.title}}" data-subtitle="{{image.subtitle}}" alt="{{image.title}}" />
+{% endfor %}
