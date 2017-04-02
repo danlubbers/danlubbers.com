@@ -1,5 +1,9 @@
 <ul id="sub-nav">
-  {% for post in site.posts %}
-    {% if post.url %}<li><a href="{{ site.static_url }}{{ post.nav_url }}" title="{{ post.title | capitalize }}" {% if post.url == page.url %}class="active"{% endif %}>{{ post.title | capitalize }}</a></li>{% endif %}
+  {% for section in site.categories.sections %}
+    {% if section.url %}<li><a href="{{ site.static_url }}{{ section.nav_url }}" title="{{ section.title | capitalize }}" {% if section.url == page.url %}class="active"{% endif %}>{{ section.title | capitalize }}</a></li>{% endif %}
+  {% endfor %}
+  <li>&nbsp;</li>
+  {% for retouch in site.categories.retouch %}
+    {% if retouch.url %}<li><a href="{{ site.static_url }}{{ retouch.nav_url }}" title="{{ retouch.title | capitalize }}" {% if retouch.url == page.url %}class="active"{% endif %}>{{ retouch.title | capitalize }}</a></li>{% endif %}
   {% endfor %}
 </ul>

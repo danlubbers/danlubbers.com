@@ -50,6 +50,8 @@
         figure              =   content.find('figure'),
         images              =   figure.find('img'),
 
+        beforeAfter         =   $('.after'),
+
         title,
         subtitle,
         warning,
@@ -73,7 +75,7 @@
             footerHeight    =   (footer.outerHeight() === 0) ? 48 : footer.outerHeight();
             contentHeight   =   (winHeight - (footerHeight + headerHeight + 40));
             imageHeight     =   html.hasClass('touch') ? (winHeight - (footerHeight + headerHeight + 100)) : (winHeight - (footerHeight + headerHeight + 40));
-            
+
             contentImages.each(function() {
                 var t  =   $(this);
 
@@ -144,7 +146,7 @@
 
         currentSlide    =   figure.find('.current');
         currentIndex    =   currentSlide.index();
-        
+
         if ( direction === PREV ) {
             currentSlide.removeClass(PAST).removeClass(CURRENT);
             if ( currentIndex > 0 ) {
@@ -199,7 +201,7 @@
         e.preventDefault();
         switchSlide(PREV);
     });
-    
+
     nextSlide.on('click', function(e) {
         e.preventDefault();
         switchSlide(NEXT);
@@ -273,6 +275,14 @@
             $(this).remove();
         });
 
+    });
+
+    beforeAfter.on('mousedown touchstart', function(e) {
+      e.currentTarget.src = e.currentTarget.dataset.before;
+    });
+
+    beforeAfter.on('mouseup touchend', function(e) {
+      e.currentTarget.src = e.currentTarget.dataset.after;
     });
 
     images.on('mousedown', function(e) {

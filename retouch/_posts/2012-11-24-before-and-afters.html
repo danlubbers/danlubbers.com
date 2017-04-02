@@ -1,0 +1,9 @@
+---
+layout: default
+nav_url: before-and-afters.html
+title: Retouching before &amp; afters
+---
+
+{% for image in site.data.before_and_afters.images %}
+  <img src="{{image.after}}" data-title="{{image.title}}" data-before="{{image.before}}" data-after="{{image.after}}" data-subtitle="{{image.subtitle}}" alt="{{image.title}}" class="after" />
+{% endfor %}

@@ -125,6 +125,10 @@ nav {
     }
 }
 
+.after {
+  cursor: pointer;
+}
+
 #content {
     position: relative;
     overflow: hidden;
@@ -264,7 +268,7 @@ footer {
     }
 }
 
-.blog {    
+.blog {
     #about-copy {
         img {
             margin: 0 auto 20px;
@@ -295,7 +299,7 @@ footer {
         display: inline-block;
         margin-right: 10px;
     }
-    
+
     #twitter_container {
         margin: 20px 0;
     }
@@ -343,7 +347,7 @@ footer {
                 -webkit-transition: color ease 500ms;
                 -moz-transition: color ease 500ms;
                 transition: color ease 500ms;
-                
+
                 a {
                     &.active {
                         color: @link-hover;
@@ -393,8 +397,8 @@ footer {
                 &:hover,
                 &.show {
                     > ul {
-                        opacity: 1;    
-                        max-height: 16em;                    
+                        opacity: 1;
+                        max-height: 500px;
                     }
                 }
             }
@@ -431,11 +435,11 @@ footer {
                 text-align: center;
                 display: block;
                 max-height: 100%;
-                
+
                 -moz-transition: left 1s, right 1s, opacity 1s;
                 -webkit-transition: left 1s, right 1s, opacity 1s;
                 transition: left 1s, right 1s, opacity 1s;
-                
+
                 &.current {
                     left: 0;
                     right: 0;
@@ -466,11 +470,11 @@ footer {
             overflow: hidden;
             background: rgba(0,0,0,0.8);
             text-align: center;
-            
+
             -webkit-transition: opacity 500ms ease-in-out;
             -moz-transition: opacity 500ms ease-in-out;
             transition: opacity 500ms ease-in-out;
-            
+
             span {
                 display: inline-block;
                 font-size: 11px;
@@ -501,7 +505,7 @@ footer {
     .close {
         position: absolute;
         top: 0px;
-        right: 5px; 
+        right: 5px;
         font-weight: bold;
         font-size: 11px;
         text-transform: uppercase;
@@ -525,7 +529,7 @@ footer {
         }
         &:hover {
             i {
-                background-position: 0 -9px;                
+                background-position: 0 -9px;
             }
         }
     }
@@ -617,7 +621,7 @@ footer {
             text-align: left;
         }
     }
-    
+
     #about {
         img {
             display: block;
