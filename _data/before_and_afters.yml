@@ -1,7 +1,7 @@
 images:
   - before: "/img/retouching/dan-lubbers-retouch-1-before.jpg"
     after: "/img/retouching/dan-lubbers-retouch-1-after.jpg"
-    title: ""
+    title: "100% Crop to show Detail"
     subtitle: "Click to see original image."
   - before: "/img/retouching/dan-lubbers-retouch-3-before.jpg"
     after: "/img/retouching/dan-lubbers-retouch-3-after.jpg"
