@@ -6,8 +6,8 @@ images:
     title: “Raymond Weil Watch”
     subtitle: “Skeleton Back”
   - url: "/img/still-life/danlubbers-still-life-portfolio-3.jpg"
-      title: “Turtle Shell”
-      subtitle: “”
+    title: “Turtle Shell”
+    subtitle: “”
   - url: "/img/still-life/danlubbers-still-life-portfolio-4.jpg"
     title: “EDC: Every Day Carry”
     subtitle: “Arcteryx Beta AR, Suunto Ambit 3 Peak, S&W MP9c, Benchmade Rift & CBK Dagger”
@@ -19,4 +19,4 @@ images:
     subtitle: “”
   - url: "/img/still-life/danlubbers-still-life-portfolio-7.jpg"
     title: “Smith & Wesson MP9c”
-    subtitle: “”                  
+    subtitle: “”
