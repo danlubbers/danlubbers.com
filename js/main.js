@@ -29,7 +29,7 @@
 
         prevSlide           =   $('.prev'),
         nextSlide           =   $('.next'),
-        isPaused            =   true,
+        isPaused            =   false,
         slides,
         currentSlide,
         currentIndex,
@@ -59,7 +59,7 @@
         minHeight           =   0;
 
     function cycle(){
-        if ( isPaused === true ) {
+        if ( isPaused === false ) {
             switchSlide(NEXT);
         }
         setTimeout(function() {
