@@ -29,7 +29,7 @@
 
         prevSlide           =   $('.prev'),
         nextSlide           =   $('.next'),
-        isPaused            =   false,
+        isPaused            =   true,
         slides,
         currentSlide,
         currentIndex,
