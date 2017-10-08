@@ -59,7 +59,7 @@
         minHeight           =   0;
 
     function cycle(){
-        if ( isPaused === false ) {
+        if ( isPaused === true ) {
             switchSlide(NEXT);
         }
         setTimeout(function() {
