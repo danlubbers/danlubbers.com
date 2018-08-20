@@ -1,5 +1,5 @@
   images:
-  - url: ("https://s3.amazonaws.com/content.danlubbers.com/img/index/danlubbers-index-portfolio-1.jpg")
+  - url: "img/index/danlubbers-index-portfolio-1.jpg"
     title: "Will Oldham"
     subtitle: "Bonnie Prince Billy"
   - url: "/img/index/danlubbers-index-portfolio-1b.jpg"
