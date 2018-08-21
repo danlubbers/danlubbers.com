@@ -1,22 +1,22 @@
 images:
-  - url: "https://s3.amazonaws.com/content.danlubbers.com/img/still-life/danlubbers-still-life-portfolio-1.jpg"
+  - url: "https://s3.amazonaws.com/content.danlubbers.com/img/still+life/danlubbers-still-life-portfolio-1.jpg"
     title: “Glock 43”
     subtitle: “w/Trijicon HD Night Sights”
-  - url: "https://s3.amazonaws.com/content.danlubbers.com/img/still-life/danlubbers-still-life-portfolio-2.jpg"
+  - url: "https://s3.amazonaws.com/content.danlubbers.com/img/still+life/danlubbers-still-life-portfolio-2.jpg"
     title: “Raymond Weil Watch”
     subtitle: “Skeleton Back”
-  - url: "https://s3.amazonaws.com/content.danlubbers.com/img/still-life/danlubbers-still-life-portfolio-3.jpg"
+  - url: "https://s3.amazonaws.com/content.danlubbers.com/img/still+life/danlubbers-still-life-portfolio-3.jpg"
     title: “Turtle Shell”
     subtitle: “”
-  - url: "https://s3.amazonaws.com/content.danlubbers.com/img/still-life/danlubbers-still-life-portfolio-4.jpg"
+  - url: "https://s3.amazonaws.com/content.danlubbers.com/img/still+life/danlubbers-still-life-portfolio-4.jpg"
     title: “Every Day Carry”
     subtitle: “Arcteryx Beta AR, Suunto Ambit 3 Peak, S&W MP9c, Benchmade Rift & CBK Dagger”
-  - url: "https://s3.amazonaws.com/content.danlubbers.com/img/still-life/danlubbers-still-life-portfolio-5.jpg"
+  - url: "https://s3.amazonaws.com/content.danlubbers.com/img/still+life/danlubbers-still-life-portfolio-5.jpg"
     title: “Hario Skerton”
     subtitle: “Coffee Grinder”
-  - url: "https://s3.amazonaws.com/content.danlubbers.com/img/still-life/danlubbers-still-life-portfolio-6.jpg"
+  - url: "https://s3.amazonaws.com/content.danlubbers.com/img/still+life/danlubbers-still-life-portfolio-6.jpg"
     title: “Benchmade CBK Dagger”
     subtitle: “”
-  - url: "https://s3.amazonaws.com/content.danlubbers.com/img/still-life/danlubbers-still-life-portfolio-7.jpg"
+  - url: "https://s3.amazonaws.com/content.danlubbers.com/img/still+life/danlubbers-still-life-portfolio-7.jpg"
     title: “Smith & Wesson MP9c”
     subtitle: “”
