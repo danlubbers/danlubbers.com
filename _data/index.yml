@@ -1,4 +1,7 @@
   images:
+  - url: "https://s3.amazonaws.com/content.danlubbers.com/img/index/danlubbers-index-portfolio-1c.jpg"
+    title: "Cristina Floro"
+    subtitle: "Model"
   - url: "https://s3.amazonaws.com/content.danlubbers.com/img/index/danlubbers-index-portfolio-1a.jpg"
     title: "Will Oldham"
     subtitle: "Bonnie Prince Billy"
